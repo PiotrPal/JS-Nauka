@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+      button{
+        background-color: aqua;
+        border-radius: 25%;
+      }
+      .resetBtn{
+        background-color: rgb(204, 31, 112);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <button onclick="ShowQuantity()">Show Quantity</button>
+      <button onclick="AddQuantity(1)">Add To Cart</button>
+      <button onclick="AddQuantity(2)">+2</button>
+      <button onclick="SetQuantity(0)" class="resetBtn">Reset Cart</button>
+    </div>
+    <script>
+      let quantity = 0;
+      function ShowQuantity(){
+        console.log('Cart Quantity:' + quantity);
+      }
+      function AddQuantity(number){
+        quantity += number;
+        console.log('Cart Quantity:' + quantity);
+      }
+      function SetQuantity(number){
+        quantity = number;
+        console.log('Cart Quantity:' + quantity);
+      }
+    </script>
+  </body>
+</html>
