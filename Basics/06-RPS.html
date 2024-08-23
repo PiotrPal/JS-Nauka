@@ -20,21 +20,27 @@
         console.log(random);
         if(random >= 0 && random <1/3){
           //Rock
-          if(option == "Paper")
+          if(option === "Paper")
             alert('Computer selected: Rock  You Won!');
+          else if (option === "Rock")
+            alert('Computer selected: Rock  Tie!');
           else
             alert('Computer selected: Rock  You Lose :(');
         } else if(random >= 1/3 && random <2/3){
           //Paper
-          if(option == "Scissors")
+          if(option === "Scissors")
             alert('Computer selected: Paper  You Won!');
+          else if (option === "Paper")
+            alert('Computer selected: Paper  Tie!');
           else
             alert('Computer selected: Paper  You Lose :(');
         }
         else if(random >= 2/3 && random <1){
-          //Scissors
-          if(option == "Rock")
-            alert('Computer selected: Scissors  You Won!');
+          //Scissors                    
+          if(option === "Rock")
+            alert('Computer selected: Scissors  You Won!');                                  
+          else if (option === "Scissors")
+            alert('Computer selected: Scissors  Tie!');                                      
           else
             alert('Computer selected: Scissors  You Lose :(');
         }
