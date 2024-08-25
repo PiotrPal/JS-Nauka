@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+    <style>
+    
+    </style>
+  </head>
+
+  <body>
+      
+    <script>
+      /*
+      const product = {
+        name: 'socks',
+        price: 1099,
+        fun: function function1(){
+          console.log('func inside object ;p ');
+        }
+      };
+      console.log(product);
+      console.log(product.name);
+      product.newProperty = true;
+      console.log(product);
+      delete product.newProperty;
+      console.log(product);
+      product.fun();
+
+      const jsonString = JSON.stringify(product);
+      console.log(jsonString);
+
+      console.log(JSON.parse(jsonString));
+      */
+      console.log('hello'.toUpperCase());
+
+      const object1 = {
+        message:'hola'
+      };
+
+      const object2 = object1;
+
+      object1.message = 'nope';
+
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message: 'nope'
+      }
+      console.log(object3);
+
+      console.log(object1 === object3);
+      console.log(object1 === object2);
+
+      const object4 = {
+        message: 'Elo',
+        price: 7.99
+      };
+      //const message = object4.message; 
+      const {message, price} = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        //message: message
+        message,
+        // method: function func1(){
+        //   console.log('method');
+        // }
+        method(){
+          console.log('method');
+        }
+      };
+
+      console.log(object5.message);
+      object5.method();
+    </script>
+  </body>
+</html>
